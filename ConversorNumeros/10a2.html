@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertir de decimal a binario</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div class="header">
+        
+    </div>
+    <div class="form">
+        <h2>Conversor de números digitales</h2>
+        <div class="card">
+            <div class="card-header">
+                <div class="text-header">Convertir decimales a número binario</div>
+            </div>
+            <div class="card-body">
+                <form action="" enctype="multipart/form-data" method="post">
+                    <div class="form-group">
+                        <label for="decimalInput">Ingrese el valor del número en decimal: </label>
+                        <input required="" class="form-control" name="decimalInput" id="decimalInput" type="text">
+                    </div>
+                    <button type="button" class="btn" onclick="convertirDecimalBinario()">Convertir</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="resultado" style="display:none;">
+        <p style="text-align: center;color: red;" id="resultadoMsg"></p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./assets/js/main.js"></script>
+</body> 
+</html>
