@@ -15,8 +15,8 @@
                         </svg></span><span>Conversor</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-5" style="--bs-primary: #3e06dd;--bs-primary-rgb: 62,6,221;">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="/index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/DecBin.html">10 y 2</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/DecBin.html">10 y 2</a></li>
                         <li class="nav-item"></li>
                         <li class="nav-item"><a class="nav-link" href="/DecOct.html">10 y 8</a></li>
                         <li class="nav-item"><a class="nav-link" href="/DecHex.html">10 y 16</a></li>
@@ -25,25 +25,38 @@
             </div>
         </nav>
         <section class="py-4 py-xl-5">
-            <section class="py-4 py-xl-5">
-                <div class="container h-100">
-                    <div class="row h-100">
-                        <div class="col-md-10 col-xl-8 text-center d-flex d-sm-flex d-md-flex justify-content-center align-items-center mx-auto justify-content-md-start align-items-md-center justify-content-xl-center">
-                            <div>
-                                <h2 class="text-uppercase fw-bold mb-3">¿DESEAS CONVERTIR DE DECIMAL A NÚMERO BINARIO, OCTAL O HEXADECIMAL?</h2>
-                                <p class="mb-4">Esta página web tiene exactamente lo que buscas. Con este sitio web, podrás convertir los números que ingreses en decimal a binario, octal y hexadecimal.</p><button class="btn btn-primary fs-5 me-2 py-2 px-4" type="button">Button</button><button class="btn btn-outline-primary fs-5 py-2 px-4" type="button">Button</button>
+            <h1 id="conversorTitle">Conversor entre decimal y binario</h1>
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                        <div class="card mb-5">
+                            <div class="card-body p-sm-5">
+                                <h3 class="text-center mb-4">Decimal -&gt; Binario</h3>
+                                <form method="post">
+                                    <div class="mb-3"><input class="form-control" type="text" id="decimalInput" name="decimalInput" placeholder="Número en decimal"></div>
+                                    <div class="mb-3"></div>
+                                    <div class="mb-3"></div>
+                                    <div><button class="btn btn-primary d-block w-100" type="button" onclick="convertirDecimalBinario()">Convertir</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                        <div class="card mb-5">
+                            <div class="card-body p-sm-5">
+                                <h3 class="text-center mb-4">Binario -&gt; Decimal</h3>
+                                <form method="post">
+                                    <div class="mb-3"><input class="form-control" type="text" id="binarioInput" name="binarioInput" placeholder="Número en binario"></div>
+                                    <div class="mb-3"></div>
+                                    <div class="mb-3"></div>
+                                    <div><button class="btn btn-primary d-block w-100" type="button" onclick="convertirBinarioDecimal()">Convertir</button></div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <div class="container">
-                <div class="text-white bg-dark border rounded border-0 p-4 p-md-5">
-                    <h2 class="fw-bold text-white mb-3">¿Puedo convertir de binario/octal/hexadecimal a decimal?</h2>
-                    <p class="mb-4">¡Sí! Esta página web también te permite convertir los valores ingresados; ya sea en número binario, octal o hexadecimal a número decimal.</p>
-                    <div class="my-3"><a class="btn btn-primary btn-lg me-2" role="button" href="#">Button</a><a class="btn btn-light btn-lg" role="button" href="#">Button</a></div>
-                </div>
             </div>
+            <p id="resultadoMsg"></p>
         </section>
         <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="/assets/js/main.js"></script>

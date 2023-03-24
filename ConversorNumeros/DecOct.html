@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>ConversorNumericos</title>
+        <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/Navbar-Right-Links-Dark-icons.css">
+        <link rel="stylesheet" href="/assets/css/styles.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3">
+            <div class="container"><a class="navbar-brand d-flex align-items-center" href="/index.html"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list-columns-reverse">
+                            <path fill-rule="evenodd" d="M0 .5A.5.5 0 0 1 .5 0h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 .5Zm4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10A.5.5 0 0 1 4 .5Zm-4 2A.5.5 0 0 1 .5 2h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 4h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 6h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 8h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5Z"></path>
+                        </svg></span><span>Conversor</span></a><button data-bs-toggle="collapse" data-bs-target="#navcol-5" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-5" style="--bs-primary: #3e06dd;--bs-primary-rgb: 62,6,221;">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item"></li>
+                    </ul>
+                    <div class="collapse navbar-collapse" id="navcol-1" style="--bs-primary: #3e06dd;--bs-primary-rgb: 62,6,221;">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/DecBin.html">10 y 2</a></li>
+                            <li class="nav-item"></li>
+                            <li class="nav-item"><a class="nav-link active" href="/DecOct.html">10 y 8</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/DecHex.html">10 y 16</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="py-4 py-xl-5">
+            <h1 id="conversorTitle">Conversor entre decimal y octal</h1>
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                        <div class="card mb-5">
+                            <div class="card-body p-sm-5">
+                                <h3 class="text-center mb-4">Decimal -&gt; Octal</h3>
+                                <form method="post">
+                                    <div class="mb-3"><input class="form-control" type="text" id="decimalInput" name="decimalInput" placeholder="Número en decimal"></div>
+                                    <div class="mb-3"></div>
+                                    <div class="mb-3"></div>
+                                    <div><button class="btn btn-primary d-block w-100" type="button" onclick="convertirDecimalOctal()">Convertir</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                        <div class="card mb-5">
+                            <div class="card-body p-sm-5">
+                                <h3 class="text-center mb-4">Octal -&gt; Decimal</h3>
+                                <form method="post">
+                                    <div class="mb-3"><input class="form-control" type="text" id="octalInput" name="octalInput" placeholder="Número en octal"></div>
+                                    <div class="mb-3"></div>
+                                    <div class="mb-3"></div>
+                                    <div><button class="btn btn-primary d-block w-100" type="button" onclick="convertirOctalDecimal()">Convertir</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p id="resultadoMsg"></p>
+        </section>
+        <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/assets/js/main.js"></script>
+    </body>
+</html>

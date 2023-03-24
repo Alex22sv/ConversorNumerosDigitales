@@ -1,0 +1,12 @@
+#conversorTitle {
+  text-align: center;
+}
+#resultadoMsg {
+  font-size: 25px;
+  color: var(--bs-purple);
+  text-align: center;
+}
+.errorAlert {
+  color: var(--bs-red) !important;
+}
+
