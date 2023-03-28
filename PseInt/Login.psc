@@ -9,14 +9,10 @@ Algoritmo Login
    // Obtener contraseña
    Escribir "Ingrede su contraseña:"
    Leer inputContra
-   // Condicional si anidado, podríamos haber utilizado la condicional Y para no utilizar el si anidado.
-   Si usuario = inputUsuario Entonces
-      Si contra = inputContra Entonces
-          Escribir "El usuario y la contraseña son correctos. Bienvenido al sistema"
-      SiNo
-          Escribir "La contraseña ingresada no es correcta."
-      FinSi
+   // Operación lógica Y
+   Si usuario = inputUsuario Y contra = inputContra Entonces
+      Escribir "El usuario y la contraseña son correctos. Bienvenido al sistema"
    SiNo
-      "El usuario ingresado no es correcto"
+      "El usuario y la contraseña ingresados no son correctos."
    FinSi
 FinAlgoritmo
