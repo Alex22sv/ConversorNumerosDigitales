@@ -7,68 +7,68 @@ Algoritmo LoginAndMenu
 	// Datos del usuario correctos
 	user = "admin" 
 	pass = "1234"
-	// Algún mensaje de bienvenida
-	Escribir "---- ¡Bienvenid@ a la calculadora! ----"
+	// AlgÃºn mensaje de bienvenida
+	Escribir "---- Â¡Bienvenid@ a la calculadora! ----"
 	// Comprobar datos, tiene un tres intentos
 	Mientras contador < 3 Hacer
 		// Leer usuario
 		Escribir "Ingrese su usuario:"
 		Leer userInput
-		// Leer contraseña
-		Escribir "Ingrese su contraseña:"
+		// Leer contraseÃ±a
+		Escribir "Ingrese su contraseÃ±a:"
 		Leer passInput
-        // Operación lógica Y
+        // OperaciÃ³n lÃ³gica Y
         Si user = userInput Y pass = passInput Entonces
-			Escribir "El usuario y la contraseña son correctos. Bienvenido al sistema de la calculadora."
-			// Colocar sentencia para terminar el código
+			Escribir "El usuario y la contraseÃ±a son correctos. Bienvenido al sistema de la calculadora."
+			// Colocar sentencia para terminar el cÃ³digo
 			contador = 3
-			Escribir "Ingrese la operación que quiera realizar: "
+			Escribir "Ingrese la operaciÃ³n que quiera realizar: "
 			Escribir "1. Suma"
 			Escribir "2. Resta"
-			Escribir "3. Multiplicación"
-			Escribir "4. División"
-			Escribir "5. Raíz cuadrada"
+			Escribir "3. MultiplicaciÃ³n"
+			Escribir "4. DivisiÃ³n"
+			Escribir "5. RaÃ­z cuadrada"
 			Leer opcion
 			Segun opcion Hacer
 				1:
-					Escribir "Ingrese el primer número: "
+					Escribir "Ingrese el primer nÃºmero: "
 					Leer num1
-					Escribir "Ingrese el segundo número: "
+					Escribir "Ingrese el segundo nÃºmero: "
 					Leer num2
 					resultado = num1 + num2
 					Escribir "El resultado de la suma de ", num1, " y ", num2, " es: ", resultado
 				2:
-					Escribir "Ingrese el primer número: "
+					Escribir "Ingrese el primer nÃºmero: "
 					Leer num1
-					Escribir "Ingrese el segundo número: "
+					Escribir "Ingrese el segundo nÃºmero: "
 					Leer num2
 					resultado = num1 - num2
 					Escribir "El resultado de la resta de ", num1, " y ", num2, " es: ", resultado
 				3:
-					Escribir "Ingrese el primer número: "
+					Escribir "Ingrese el primer nÃºmero: "
 					Leer num1
-					Escribir "Ingrese el segundo número: "
+					Escribir "Ingrese el segundo nÃºmero: "
 					Leer num2
 					resultado = num1 * num2
-					Escribir "El resultado de la multiplicación de ", num1, " por ", num2, " es: ", resultado
+					Escribir "El resultado de la multiplicaciÃ³n de ", num1, " por ", num2, " es: ", resultado
 				4: 
-					Escribir "Ingrese el primer número: "
+					Escribir "Ingrese el primer nÃºmero: "
 					Leer num1
-					Escribir "Ingrese el segundo número: "
+					Escribir "Ingrese el segundo nÃºmero: "
 					Leer num2
 					resultado = num1 / num2
-					Escribir "El resultado de la división de ", num1, " por ", num2, " es: ", resultado
+					Escribir "El resultado de la divisiÃ³n de ", num1, " por ", num2, " es: ", resultado
 				5: 
-					Escribir "Ingrese el primer número: "
+					Escribir "Ingrese el primer nÃºmero: "
 					Leer num3
-					Escribir "Opción en progreso..."
-					// Escribir "El resultado de la suma de ", num1, " y ", num2, " es: ", resultado
+					resultado = raiz(num3)
+					Escribir "El resultado de la raÃ­z cuadrada de ", num3,  " es: ", resultado
 				De Otro Modo:
-					Escribir "La opción ingresada no es válida."
+					Escribir "La opciÃ³n ingresada no es vÃ¡lida."
 			Fin Segun
         SiNo
 			contador = contador + 1
-			Escribir "El usuario y la contraseña ingresados no son correctos. Te quedan ", 3-contador, " intentos."
+			Escribir "El usuario y la contraseÃ±a ingresados no son correctos. Te quedan ", 3-contador, " intentos."
         FinSi
 	Fin Mientras
 FinAlgoritmo
