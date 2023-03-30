@@ -4,6 +4,8 @@ Algoritmo LoginAndMenu
 	Definir contador, opcion Como Entero
 	Definir num1, num2, num3, resultado Como Real
 	contador = 0 
+	// La palabra reservada NULL no existe en PseInt
+	
 	// Datos del usuario correctos
 	user = "admin" 
 	pass = "1234"
@@ -57,9 +59,13 @@ Algoritmo LoginAndMenu
 					Leer num1
 					Escribir "Ingrese el segundo número: "
 					Leer num2
-					resultado = num1 / num2
-					Escribir "El resultado de la división de ", num1, " por ", num2, " es: ", resultado
-				5: 
+					Si num2 <> 0 Entonces
+						resultado = num1 / num2
+						Escribir "El resultado de la división de ", num1, " por ", num2, " es: ", resultado
+					SiNo 
+						Escribir "¡NO DIVIRÁS POR CERO!"
+					FinSi
+				5:	
 					Escribir "Ingrese el número: "
 					Leer num3
 					resultado = raiz(num3)
