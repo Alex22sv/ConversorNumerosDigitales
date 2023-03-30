@@ -38,8 +38,12 @@ Algoritmo LoginAndMenu
 					Leer num1
 					Escribir "Ingrese el segundo número: "
 					Leer num2
-					resultado = num1 + num2
-					Escribir "El resultado de la suma de ", num1, " y ", num2, " es: ", resultado
+					Si num1 == NULLNumerico O num2 == NULLNumerico Entonces
+						Escribir "No puedes dejar campos vacíos2."
+					SiNo
+						resultado = num1 + num2
+						Escribir "El resultado de la suma de ", num1, " y ", num2, " es: ", resultado
+					FinSi
 				2:
 					Escribir "Ingrese el primer número: "
 					Leer num1
