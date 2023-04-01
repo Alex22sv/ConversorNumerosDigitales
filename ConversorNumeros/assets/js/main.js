@@ -9,6 +9,9 @@ function convertirDecimalBinario() {
         resultadoMsg.classList.add("errorAlert");
         return resultadoMsg.innerHTML = "¡Error! No puedes dejar campos vacíos.";
     }
+    if(decimal < 2){
+        resultado = decimal;
+    }
     while(decimal >= 2){
         // console.log(`Dividiendo ${decimal} por dos.`);
         residuo = decimal % 2;
@@ -34,6 +37,9 @@ function convertirDecimalOctal(){
        resultadoMsg.classList.add("errorAlert");
        return resultadoMsg.innerHTML = "¡Error! No puedes dejar campos vacíos."; 
     }
+    if(decimal < 8){
+        resultado = decimal;
+    }
     while(decimal >= 8){
         // console.log(`Dividiendo ${decimal} por ocho.`);
         residuo = decimal % 8;
@@ -58,6 +64,31 @@ function convertirDecimalHexadecimal(){
     if(decimal == ""){
        resultadoMsg.classList.add("errorAlert");
        return resultadoMsg.innerHTML = "¡Error! No puedes dejar campos vacíos."; 
+    } 
+    if(decimal < 16){
+        switch(String(decimal)){
+            case "10":
+                resultado = String('A') + resultado;
+                break;
+            case "11":
+                resultado = String('B') + resultado;
+                break;
+            case "12":
+                resultado = String('C') + resultado;
+                break;
+            case "13":
+                resultado = String('D') + resultado;
+                break;
+            case "14":
+                resultado = String('E') + resultado;
+                break;
+            case "15":
+                resultado = String('F') + resultado;
+                break;
+            default:
+                resultado = String(decimal) + resultado;
+                break;
+        }
     }
     while(decimal >= 16){
         console.log(`Dividiendo ${decimal} por dieciséis.`);
@@ -88,7 +119,7 @@ function convertirDecimalHexadecimal(){
                 break;
         }
         if(decimal < 16){
-            console.log("Valor es menor que 16, antiguo resultado: " + resultado);
+            // console.log("Valor es menor que 16, antiguo resultado: " + resultado);
             switch(String(decimal)){
                 case "10":
                     resultado = String('A') + resultado;
@@ -114,7 +145,7 @@ function convertirDecimalHexadecimal(){
             }
         }
     }
-    console.log(`El resultado es ${resultado}`);
+    //console.log(`El resultado es ${resultado}`);
     resultadoMsg.style.display = "block";
     resultadoMsg.innerHTML = `El resultado de convertir el valor <b>${decimalOriginal}<sub>(10)</b> de decimal a hexadecimal es <b>${resultado}<sub>(16)</sub>`;
 }
