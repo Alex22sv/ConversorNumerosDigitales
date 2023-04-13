@@ -3,15 +3,15 @@
 using namespace std;
 
 int main(){
-    const int distancia = 150;
-    const int horas = 3;
+    const float distancia = 150.0;
+    const float horas = 3.0;
     float velocidad = 0;
     // Proceso
     velocidad = distancia/horas;   
     cout<<"La velocidad de un vehículo que ha recorrido 150km en 3 horas es: " << velocidad << "km/h.";
 
-    const int hours = 2;
-    const int speed = 60;
+    const float hours = 2.0;
+    const float speed = 60.0;
     float distance = 0;
     // Proceso
     distance = hours*speed;

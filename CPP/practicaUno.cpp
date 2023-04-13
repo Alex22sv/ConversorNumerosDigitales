@@ -8,7 +8,7 @@
 using namespace std;
 
 int main(){
-    // Función que permite usar distintos tipos de caracteres
+    // Función que permite usar distintos tipos de caracteres (no funciona por X razón)
     setlocale(LC_ALL, "spanish");
     // Definir variables
     int anioNacimiento, edad;
