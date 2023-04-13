@@ -14,18 +14,19 @@ Algoritmo CalcularDescuento
 		total = total * 0.80
 		Escribir "Su total a pagar es mayor a $50, recibe un 20% de descuento."
 	FinSi
-	Si metodoPago = 1 Entonces
-		Escribir "Su total es $", total
-		Escribir "Ingrese con cuánto va a pagar: "
-		Leer recibido
-		Si recibido >= total Entonces
-			vuelto = recibido - total
-			Escribir "Su vuelto a recibir es $", vuelto	
-		SiNo
-			vuelto = total - recibido
-			Escribir "¡Alto! Usted todavía debe $", vuelto
-		FinSi
-	SiNo
-		Escribir "Su total a pagar es $", total, " y no debe recibir vuelto."
-	FinSi
+	Segun metodoPago Hacer
+		1:
+			Escribir "Su total es $", total
+			Escribir "Ingrese con cuánto va a pagar: "
+			Leer recibido
+			Si recibido >= total Entonces
+				vuelto = recibido - total
+				Escribir "Su vuelto a recibir es $", vuelto	
+			SiNo
+				vuelto = total - recibido
+				Escribir "¡Alto! Usted todavía debe $", vuelto
+			FinSi
+		2:
+			Escribir "Su total a pagar es $", total, " y no debe recibir vuelto."
+	FinSegun
 FinAlgoritmo
