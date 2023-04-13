@@ -28,5 +28,19 @@ int main(){
     cin>>numero;
     // Si regresa 0, suele conocerse como que se ejecutó con éxito.
     cout<<"El número ingresado fue " + to_string(numero);
+
+    string totalPagar, PagoTotal, total_pagar;
+    // Notación Camell
+    totalPagar = "Hola";
+    // Notación Pascal
+    PagoTotal = "Hola amigos";
+    // Notación snake_case
+    total_pagar = "Hola mundo";
+    // Es muy importante dejar el return 0, algunos sistemas operativos lo exigen.
     return 0;
 }
+
+/* 
+Es muy importante utilizar nombres descriptivos al momento de asignar variables, funciones, etc.
+
+*/
