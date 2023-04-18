@@ -17,7 +17,7 @@ Algoritmo SumaDiezNumerosIngresados
 	// Opción del bucle FOR
 	Definir num, sum, prom Como Real
 	Definir cont Como Entero
-	Para cont <- 1 Hasta 10 Con Paso 1 Hacer
+	Para cont <- 1 Hasta 20 Con Paso 2 Hacer
 		Escribir "Ingrese el número #", cont
 		Leer num
 		sum = sum + num
@@ -27,18 +27,18 @@ Algoritmo SumaDiezNumerosIngresados
 	Escribir "El promedio de esos 10 números es: ", prom
 	
 	// Opción del bucle DO WHILE
-//	Definir number, resultado, average Como Real
-//	Definir counter Como Entero
-//	counter = 0
-//	resultado = 0
-//	Repetir
-//		counter = counter + 1
-//		Escribir "Ingrese el número #", counter
-//		Leer number
-//		resultado = resultado + number
-//	Hasta Que counter >= 10
-//	Escribir "El resultado de sumar esos 10 números es: ", resultado
-//	average = resultado / counter
-//	Escribir "El promedio de esos 10 números es: ", average
+	Definir number, resultado, average Como Real
+	Definir counter Como Entero
+	counter = 0
+	resultado = 0
+	Repetir
+		counter = counter + 1
+		Escribir "Ingrese el número #", counter
+		Leer number
+		resultado = resultado + number
+	Hasta Que counter >= 10
+	Escribir "El resultado de sumar esos 10 números es: ", resultado
+	average = resultado / counter
+	Escribir "El promedio de esos 10 números es: ", average
 	
 FinAlgoritmo
