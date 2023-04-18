@@ -2,11 +2,14 @@
 
 using namespace std;
 
+// Variables globales
+int cantidadHoras;
+
 int main(){
     // Calcular el salario de una persona dependiendo de las horas trabajadas y el precio hora
 
     const int precioHora = 23;
-    int cantidadHoras;
+    // Variables locales
     float salario;
     string nombrePersona;
     cout<<"Ingrese su nombre: ";
@@ -14,7 +17,7 @@ int main(){
     cout<<"Ingrese la cantidad de horas trabajadas: ";
     cin>>cantidadHoras;
 
-    // Intentemos usar NUlL
+    // Intentemos usar NULL
     if(nombrePersona == "" || cantidadHoras == 0){
         cout<<"No puedes dejar campos vacíos.";
         return 1;
