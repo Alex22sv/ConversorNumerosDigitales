@@ -1,15 +1,12 @@
 #include <iostream>
 // Librerías para imprimir caracteres especiales
-#include <stdio.h>
-#include <wchar.h>
-#include <locale.h>
-#include <stdlib.h>
+#include <windows.h>
 
 using namespace std;
 
 int main(){
     // Función que permite usar distintos tipos de caracteres (no funciona por X razón)
-    setlocale(LC_ALL, "spanish");
+    SetConsoleOutputCP(CP_UTF8);
     // Definir variables
     int anioNacimiento, edad;
     // Definir constantes
