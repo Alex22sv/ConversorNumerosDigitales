@@ -25,7 +25,12 @@ function convertirDecimalBinario() {
     }
     // console.log(`El resultado es ${resultado}`);
     resultadoMsg.style.display = "block";
-    resultadoMsg.innerHTML = `El resultado de convertir el valor <b>${decimalOriginal}<sub>(10)</sub></b> de decimal a binario es <b>${resultado}<sub>(2)</sub></b>`;
+    if(esNulo(resultado)){
+        resultadoMsg.innerHTML = `Has ingresado valores no válidos. No se puede convertir <b>${decimalOriginal}<sub>(10)</sub></b> de decimal a binario.`;
+        resultadoMsg.classList.add("errorAlert");
+    } else {
+        resultadoMsg.innerHTML = `El resultado de convertir el valor <b>${decimalOriginal}<sub>(10)</sub></b> de decimal a binario es <b>${resultado}<sub>(2)</sub></b>`;
+    }
 }
 function convertirDecimalOctal(){
     var input = document.getElementById("decimalInput");
@@ -53,7 +58,12 @@ function convertirDecimalOctal(){
     }
     // console.log(`El resultado es ${resultado}`);
     resultadoMsg.style.display = "block";
-    resultadoMsg.innerHTML = `El resultado de convertir el valor <b>${decimalOriginal}<sub>(10)</b> de decimal a octal es <b>${resultado}<sub>(8)</sub>`;
+    if(esNulo(resultado)){
+        resultadoMsg.innerHTML = `Has ingresado valores no válidos. No se puede convertir <b>${decimalOriginal}<sub>(10)</sub></b> de decimal a octal.`;
+        resultadoMsg.classList.add("errorAlert");
+    } else {    
+        resultadoMsg.innerHTML = `El resultado de convertir el valor <b>${decimalOriginal}<sub>(10)</b> de decimal a octal es <b>${resultado}<sub>(8)</sub>`;
+    }
 }
 function convertirDecimalHexadecimal(){
     var input = document.getElementById("decimalInput");
@@ -147,7 +157,12 @@ function convertirDecimalHexadecimal(){
     }
     //console.log(`El resultado es ${resultado}`);
     resultadoMsg.style.display = "block";
-    resultadoMsg.innerHTML = `El resultado de convertir el valor <b>${decimalOriginal}<sub>(10)</b> de decimal a hexadecimal es <b>${resultado}<sub>(16)</sub>`;
+    if(esNulo(resultado)){
+        resultadoMsg.innerHTML = `Has ingresado valores no válidos. No se puede convertir <b>${decimalOriginal}<sub>(10)</sub></b> de decimal a hexadecimal.`;
+        resultadoMsg.classList.add("errorAlert");
+    } else {
+        resultadoMsg.innerHTML = `El resultado de convertir el valor <b>${decimalOriginal}<sub>(10)</b> de decimal a hexadecimal es <b>${resultado}<sub>(16)</sub>`;
+    }
 }
 function convertirBinarioDecimal(){
     var input = document.getElementById("binarioInput");
@@ -167,7 +182,12 @@ function convertirBinarioDecimal(){
     }
     // console.log(resultado);
     resultadoMsg.style.display = "block";
-    resultadoMsg.innerHTML = `El resultado de convertir el valor <b>${binarioOriginal}<sub>(2)</sub></b> de binario a decimal es <b>${resultado}<sub>(10)</sub></b>`;
+    if(esNulo(resultado)){
+        resultadoMsg.innerHTML = `Has ingresado valores no válidos. No se puede convertir <b>${binarioOriginal}<sub>(10)</sub></b> de binario a decimal.`;
+        resultadoMsg.classList.add("errorAlert");
+    } else {
+        resultadoMsg.innerHTML = `El resultado de convertir el valor <b>${binarioOriginal}<sub>(2)</sub></b> de binario a decimal es <b>${resultado}<sub>(10)</sub></b>`;
+    }
 }
 function convertirOctalDecimal(){
     var input = document.getElementById("octalInput");
@@ -187,7 +207,12 @@ function convertirOctalDecimal(){
     }
     // console.log(resultado);
     resultadoMsg.style.display = "block";
-    resultadoMsg.innerHTML = `El resultado de convertir el valor <b>${octalOriginal}<sub>(8)</sub></b> de octal a decimal es <b>${resultado}<sub>(10)</sub></b>`;
+    if(esNulo(resultado)){
+        resultadoMsg.innerHTML = `Has ingresado valores no válidos. No se puede convertir <b>${octalOriginal}<sub>(10)</sub></b> de octal a decimal.`;
+        resultadoMsg.classList.add("errorAlert");
+    } else {
+        resultadoMsg.innerHTML = `El resultado de convertir el valor <b>${octalOriginal}<sub>(8)</sub></b> de octal a decimal es <b>${resultado}<sub>(10)</sub></b>`;
+    }
 }
 function convertirHexadecimalDecimal(){
     var input = document.getElementById("octalInput");
@@ -231,9 +256,21 @@ function convertirHexadecimalDecimal(){
     }
     // console.log(resultado);
     resultadoMsg.style.display = "block";
-    resultadoMsg.innerHTML = `El resultado de convertir el valor <b>${hexadecimalOriginal}<sub>(16)</sub></b> de hexadecimal a decimal es <b>${resultado}<sub>(10)</sub></b>`;
+    if(esNulo(resultado)){
+        resultadoMsg.innerHTML = `Has ingresado valores no válidos. No se puede convertir <b>${hexadecimalOriginal}<sub>(10)</sub></b> de hexadecimal a decimal.`;
+        resultadoMsg.classList.add("errorAlert");
+    } else {
+        resultadoMsg.innerHTML = `El resultado de convertir el valor <b>${hexadecimalOriginal}<sub>(16)</sub></b> de hexadecimal a decimal es <b>${resultado}<sub>(10)</sub></b>`;
+    }
 }
 /* Revisión si es entero o no */
 function esEntero(n){
     return n === +n && n === (n|0);
+}
+function esNulo(n){
+    if(n == "" || n == null || String(n) == "NaN"){
+        return true;
+    } else {
+        return false;
+    }
 }
