@@ -8,7 +8,7 @@ int main(){
     SetConsoleOutputCP(CP_UTF8);
 
     // Definir variables
-    float n1, n2, n3, n4, n5, n6 = 0;
+    float n1, n2, n3, n4, n5, n6, kilometros, precio, dias = 0;
 
     // Leer dos números y deducir si están en orden creciente.
     cout<<"\nPráctica #1\n";
@@ -70,4 +70,18 @@ int main(){
     } else {
         cout<<"Opción no definida. Error del programa.";
     }
+
+    // Determinar el precio de ida y vuelta de un avión. Conociendo la distancia a recorrer y sabiendo que si el número de días
+    // de estancia es superior a 7 días y la distancia superior a 800km el billete tiene una reducción del 30%. El precio por
+    // km es de 2.5 euros.
+    cout<<"\nPráctica #4\n";
+    cout<<"¿Cuántos kilómetros volará? ";
+    cin>>kilometros; 
+    cout<<"¿Cuántos días se quedará en ese lugar? ";
+    cin>>dias;
+    precio = 2.5*kilometros;
+    if(dias>7 && kilometros>800){
+        precio = precio*0.70;
+    }
+    cout<<"El precio a pagar es: "<<precio<<" euros.";
 }
