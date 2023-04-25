@@ -12,4 +12,6 @@ int main(){
         // De lo contrario
         cout<<"El segundo número es mayor que el primero.";
     }
+
+    return 0;
 }

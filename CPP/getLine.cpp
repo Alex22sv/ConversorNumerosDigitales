@@ -15,4 +15,5 @@ int main(){
     getline(cin, nombrePersona);
     cout<<"Hola "<<nombrePersona;
 
+    return 0;
 }
