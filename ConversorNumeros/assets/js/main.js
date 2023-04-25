@@ -104,7 +104,7 @@ function convertirDecimalHexadecimal(){
         console.log(`Dividiendo ${decimal} por dieciséis.`);
         residuo = decimal % 16;
         decimal = Math.floor(decimal / 16);
-        console.log(`Cociente: ${decimal} \nResiduo: ${residuo}`);
+        // console.log(`Cociente: ${decimal} \nResiduo: ${residuo}`);
         switch(String(residuo)){
             case "10":
                 resultado = String('A') + resultado;
@@ -226,7 +226,7 @@ function convertirHexadecimalDecimal(){
         return resultadoMsg.innerHTML = "¡Error! No puedes dejar campos vacíos.";
     }
     for(var i = 0; i < String(hexadecimal).length; i++){
-        console.log(`El valor actual es ${hexadecimal[i]}`);
+        // console.log(`El valor actual es ${hexadecimal[i]}`);
         switch(String(hexadecimal[i])){
             case "A":
                 valor = String('10');
