@@ -51,21 +51,21 @@ int main(){
     */
     if(n4 == n5 || n4 == n6 || n5 == n6){
         cout<<"Para este ejercicio no podemos tener números iguales.";
-    } else if(n4>n5>n6){
+    } else if((n4>n5)&&(n5>n6)){
         cout<<"El número medio es: "<<n5;
-    } else if(n6>n4>n5){
+    } else if((n6>n4)&&(n4>n5)){
         cout<<"El número medio es: "<<n4;
-    } else if(n5>n6>n4){
-        cout<<"El número medio es: "<<n6;
-    } else if(n5>n4>n6){
+    } else if((n5>n6)&&(n6>n4)){
+        cout<<"El númer)o medio es: "<<n6;
+    } else if((n5>n4)&&(n4>n6)){
         cout<<"El número medio es: "<<n4;
-    } else if(n6>n5>n4){
+    } else if((n6>n5)&&(n5>n4)){
         cout<<"El número medio es: "<<n5;
-    } else if(n4>n6>n5){
+    } else if((n4>n6)&&(n6>n5)){
         cout<<"El número medio es: "<<n6;
-    }  else if(n5>n4>n6){
+    }  else if((n5>n4)&&(n4>n6)){
         cout<<"El número medio es: "<<n4;
-    } else if(n6>n5>n4){
+    } else if((n6>n5)&&(n5>n4)){
         cout<<"El número medio es: "<<n5;
     } else {
         cout<<"Opción no definida. Error del programa.";
