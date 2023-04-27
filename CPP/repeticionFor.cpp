@@ -21,17 +21,17 @@ int main(){
     cout<<"La suma de los primeros 5 números es: "<<suma<<"\n";
     
     // Calcular el promedio de 3 notas
-    float nota, promedio, suma = 0;
-    for (int = 0; i<3; i++){
+    float nota, promedio, sumaprom = 0;
+    for (int i = 0; i<3; i++){
         cout<<"Ingrese su nota: ";
         cin>>nota;
-        suma += nota;
+        sumaprom += nota;
     }
-    promedio = suma/3;
+    promedio = sumaprom/3;
     cout<<"El promedio es: "<<promedio;
     
     // Decremento
-    for (i=5; i>0; i--){
+    for (int i=5; i>0; i--){
         cout<<"\nHola Mundo\n";
     }
 
@@ -40,7 +40,7 @@ int main(){
     int resultadoFactorial = 1;
     cout<<"Ingrese un número para calcular su factorial: ";
     cin>>numeroFactorial;
-    for(i=numeroFactorial; i>0; i--){
+    for(int i=numeroFactorial; i>0; i--){
         resultadoFactorial *= i; 
     }
     cout<<"El resultado del numero factorial de "<<numeroFactorial<<" es: "<<resultadoFactorial;
@@ -49,13 +49,13 @@ int main(){
     // Sumar los números pares
     // Con el operador mod (%) podemos obtener el residuo 
     int finRango, sumaPares, sumaImpares, residuoEntero = 0;  
-    cout<<"Ingrese un número de rango que empieza por 1: ";
+    cout<<"\nIngrese un número de rango que empieza por 1: ";
     cin>>finRango;
-    for (i=1; i<=finRango; i++){
-        residuoRango = i % 2;
+    for (int i=1; i<=finRango; i++){
+        residuoEntero = i % 2;
         // Con sólo hacer un cambio, podemos obtener los números impares
         // if(i!=0){
-        if(i==0){
+        if(residuoEntero==0){
             sumaPares += i;
         } else {
             sumaImpares += i;
