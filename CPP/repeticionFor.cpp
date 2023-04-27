@@ -13,6 +13,7 @@ int main(){
 
     // Sumar los primeros 5 números
     int suma = 0;
+    //       start  stop   step
     for (int i = 1; i <= 5; i++){
         // suma = suma + i;
         suma += i;
