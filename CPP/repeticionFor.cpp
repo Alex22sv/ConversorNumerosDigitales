@@ -45,5 +45,19 @@ int main(){
     }
     cout<<"El resultado del numero factorial de "<<numeroFactorial<<" es: "<<resultadoFactorial;
 
+
+    // Sumar los números pares
+    // Con el operador mod (%) podemos obtener el residuo 
+    int finRango, sumaPares, residuoEntero = 0;  
+    cout<<"Ingrese un número de rango que empieza por 1: ";
+    cin>>finRango;
+    for (i=1; i<=finRango; i++){
+        residuoRango = i % 2;
+        if(i==0){
+            sumaPares += i;
+        }
+    }
+    cout<<"El resultado de la suma de los números pares entre 1 y "<<finRango<<" es: "<<sumaPares;
+
     return 0;
 }
