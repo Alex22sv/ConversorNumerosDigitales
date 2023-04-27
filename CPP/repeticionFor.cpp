@@ -53,6 +53,8 @@ int main(){
     cin>>finRango;
     for (i=1; i<=finRango; i++){
         residuoRango = i % 2;
+        // Con sólo hacer un cambio, podemos obtener los números impares
+        // if(i!=0){
         if(i==0){
             sumaPares += i;
         }
