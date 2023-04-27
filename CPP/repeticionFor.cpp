@@ -34,5 +34,15 @@ int main(){
     for (i=5; i>0; i--){
         cout<<"\nHola Mundo\n";
     }
+
+    // Calcule el factorial de un número
+    int numeroFactorial, resultadoFactorial = 0;
+    cout<<"Ingrese un número para calcular su factorial: ";
+    cin>>numeroFactorial;
+    for(i=numeroFactorial; i>0; i--){
+        resultadoFactorial *= i; 
+    }
+    cout<<"El resultado del numero factorial de "<<numeroFactorial<<" es: "<<resultadoFactorial;
+
     return 0;
 }
