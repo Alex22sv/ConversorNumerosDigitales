@@ -10,13 +10,12 @@ int main(){
     // Desea continuar
     bool continuar = 1;
     while (continuar == 1){
-        int caso, preguntar, sumaMultiplesDeCinco, sumaDePares, sumaDeImpares = 0;
+        int caso, preguntar, sumaMultiplesDeCinco = 0, sumaDePares = 0, sumaDeImpares = 0;
         cout << "-----------\nIngrese una de las siguientes opciones: \n1. Suma de múltiples de 5\n2. Suma de números pares\n3. Suma de números impares\n-----------";
         cin>>caso;    
         switch (caso){
             case 1:
                 for (int i = 1; i <= 100; i++){
-                    cout<<i;
                     if (i % 5 == 0){
                         sumaMultiplesDeCinco += i;
                     }
