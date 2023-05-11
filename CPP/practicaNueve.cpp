@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// Parámetros formales
 float CalculoSalario(float salario);
 
 /* ¿Es posible tener 2 funciones con el mismo nombre?
@@ -20,6 +21,7 @@ int main(){
 
     cout<<"Ingrese su salario: $";
     cin>>valorIngresado;
+    // Parámetros actuales/reales
     cout<<"El valor que le quitarán de la AFP es $"<<CalculoSalario(valorIngresado);
     return 0;
 }
