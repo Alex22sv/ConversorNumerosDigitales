@@ -5,8 +5,6 @@ using namespace std;
 
 // Declaración de variables globales
 float salarioFinal = 0.00;
-const float AFPvalor = 50.00;
-const float ISSvalor = 24.00;
 
 // Declaración de funciones
 float calculoSalario(float salario);
@@ -27,8 +25,6 @@ int main(){
     cout<<"Ingrese su salario: $";
     cin>>salarioIngresado;
     cout<<"El salario resultante será: $"<<calculoSalario(salarioIngresado);
-
-
     return 0;
 }
 
@@ -37,6 +33,7 @@ float calculoImpuesto(float salario){
     impuesto = (salario - (salario*0.0625)-(salario*0.03));
     return impuesto;
 }
+
 int calculoTramo(float salarioResultante){
     if((salarioResultante>=0.01) && (salarioResultante<=472.00)){
         // I tramo
