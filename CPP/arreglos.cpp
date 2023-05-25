@@ -25,5 +25,26 @@ int main(){
     for (int i = 3; i>=0; i--){
         cout<<arregloValores[i]<<" ";
     }
+
+    // Obtener el tamaño de arreglos en bytes y la cantidad de elementos
+    cout<<"\nObtener el tamaño de arreglos en bytes y la cantidad de elementos\n";
+    // int MiPrimerArreglo[] = {12, 42, 5, 7, 8112};
+    int MiPrimerArreglo[5];
+    int DimensionArreglo = sizeof(MiPrimerArreglo)/sizeof(int);
+
+    // Solicitar los datos
+    for (int i = 0; i < DimensionArreglo; i++){
+        int input = 0;
+        cout<<"Ingrese el número #"<<i+1<<": ";
+        cin>>input;
+        MiPrimerArreglo[i] = input;
+    }
+    cout<<"\nNúmeros pares y su posición\n";   
+    for (int i = 0; i < DimensionArreglo; i++){
+        if(MiPrimerArreglo[i]%2 == 0){
+            cout<<"Número: "<<MiPrimerArreglo[i]<<" | Posición: "<<i<<"\n"; 
+        }
+    }
+    
     return 0;
 }
