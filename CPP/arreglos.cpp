@@ -46,5 +46,24 @@ int main(){
         }
     }
     
+    cout<<"\nArreglos bidimensionales\n";
+    // Arreglos bidimensionales
+    int arreglobidim[2][4] = {
+        {1, 3, 4, 5},
+        {6, 7, 8, 9}
+    };
+    // Cambiar el valor 
+    arreglobidim[0][0] = 12;
+    for (int i = 0; i < 2; i++)
+    {
+        cout<<endl;
+        for (int j = 0; j < 4; j++)
+        {
+            cout<<arreglobidim[i][j]<<" ";
+        }
+        
+    }
+    
+    
     return 0;
 }
