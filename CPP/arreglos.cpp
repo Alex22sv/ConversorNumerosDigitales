@@ -3,6 +3,8 @@
 
 using namespace std;
 
+void Imprimir(string matriz[3][2]);
+
 int main(){
     SetConsoleOutputCP(CP_UTF8);
     // Crear, declarar e inicializar un arreglo
@@ -63,7 +65,27 @@ int main(){
         }
         
     }
-    
+    cout<<"\nFunción con arreglos como parámetros";
+    string ejemplo[3][2] = {
+        {"autor1", "libro1"},
+        {"autor2", "libro2"},
+        {"autor3", "libro3"}
+    };
+    Imprimir(ejemplo);
     
     return 0;
+}
+
+// Importante: una función no puede retornar arreglos
+void Imprimir(string matriz[3][2]){
+    for (int i = 0; i < 3; i++)
+    {
+        cout<<endl;
+        for (int j = 0; j < 2; j++)
+        {
+            cout<<matriz[i][j]<<" ";
+        }
+        
+    }
+    
 }
