@@ -1,0 +1,45 @@
+
+-----Datos de la persona 1-----
+Nombre: Alex
+Teléfono #1: 76241743
+Teléfono #2: 48926
+
+-----Datos de la persona 2-----
+Nombre: Isaac
+Teléfono #1: 79995
+Teléfono #2: 230095
+
+-----Datos de la persona 3-----
+Nombre: Ximena
+Teléfono #1: 629464
+Teléfono #2: 99522
+
+-----Datos de la persona 1-----
+Nombre: Jisya
+Teléfono #1: 995984
+Teléfono #2: 96269
+
+-----Datos de la persona 2-----
+Nombre: Juan
+Teléfono #1: 99299
+Teléfono #2: 95959
+
+-----Datos de la persona 3-----
+Nombre: Denise
+Teléfono #1: 8959999
+Teléfono #2: 12995
+
+-----Datos de la persona 1-----
+Nombre: Carlos
+Teléfono #1: 2343452342
+Teléfono #2: 234234234234
+
+-----Datos de la persona 2-----
+Nombre: Pedro
+Teléfono #1: 234234234
+Teléfono #2: 234234234
+
+-----Datos de la persona 3-----
+Nombre: Zeus
+Teléfono #1: 23234234234
+Teléfono #2: 234234234
